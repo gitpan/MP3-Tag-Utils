@@ -1,5 +1,8 @@
 Revision history for MP3-Tag-Utils
 
+0.0.1	2010-08-19/18:00
+		-Add a missing && in "bin/mp3tag".
+
 0.0.0	2010-08-19/17:00
 		-Initial release.
 

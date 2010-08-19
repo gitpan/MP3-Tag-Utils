@@ -55,7 +55,7 @@ getopts('a:A:c:g:t:T:y:', \%opts);
 #if more than one was specified, make sure the safety is off
 if (
 	defined( $ARGV[1] ) &&
-	(!defined( $opts{S} ))
+	(!defined( $opts{S} )) &&
 	(defined($opts{t}))
 	) {
 	warn('More than one file specified and "-t" is being used, but "-S" is not supplied');

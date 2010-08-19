@@ -11,11 +11,11 @@ MP3::Tag::Utils - Assorted utilities for manipulating MP3 files via MP3::Tag.
 
 =head1 VERSION
 
-Version 0.0.0
+Version 0.0.1
 
 =cut
 
-our $VERSION = '0.0.0';
+our $VERSION = '0.0.1';
 
 
 =head1 SYNOPSIS
