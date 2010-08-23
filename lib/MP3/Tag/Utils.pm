@@ -11,11 +11,11 @@ MP3::Tag::Utils - Assorted utilities for manipulating MP3 files via MP3::Tag.
 
 =head1 VERSION
 
-Version 0.0.1
+Version 0.0.2
 
 =cut
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.2';
 
 
 =head1 SYNOPSIS
@@ -175,7 +175,8 @@ sub change{
 
 =head2 rename
 
-This renames files.
+This renames files. s/\//\\/g is used on all the tags to make sure
+there are no directory issues.
 
 One argument is taken and it is a hash ref.
 
@@ -299,6 +300,13 @@ sub rename{
 
 				$int2++;
 			}
+
+			$track=~s/\/.*//;
+			$title=~s/\//\\/g;
+			$album=~s/\//\\/g;
+			$artist=~s/\//\\/g;
+			$genre=~s/\//\\/g;
+			$year=~s/\//\\/g;
 
 			my %data=(
 					  title=>$title,
@@ -461,6 +469,8 @@ sub show{
 
 				$int2++;
 			}
+
+			$track=~s/\/.*//;
 
 			my %data=(
 					  file=>$args{files}[$int],
