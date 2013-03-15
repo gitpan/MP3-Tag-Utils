@@ -1,5 +1,8 @@
 Revision history for MP3-Tag-Utils
 
+0.0.3	2012-07-16/17:45
+		-Correct the POD for 'bin/mp3show'.
+
 0.0.2	2010-08-23/17:40
 		-Correct handling of 2.4 tracks.
 		-Replace '/' in tags with '\' when renaming.

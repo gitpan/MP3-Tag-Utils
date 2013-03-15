@@ -11,11 +11,11 @@ MP3::Tag::Utils - Assorted utilities for manipulating MP3 files via MP3::Tag.
 
 =head1 VERSION
 
-Version 0.0.2
+Version 0.0.3
 
 =cut
 
-our $VERSION = '0.0.2';
+our $VERSION = '0.0.3';
 
 
 =head1 SYNOPSIS
@@ -576,7 +576,7 @@ Year is not numeric.
 
 =head1 AUTHOR
 
-Zane C. Bowers, C<< <vvelox at vvelox.net> >>
+Zane C. Bowers-Hadley, C<< <vvelox at vvelox.net> >>
 
 =head1 BUGS
 
@@ -622,7 +622,7 @@ L<http://search.cpan.org/dist/MP3-Tag-Utils/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2010 Zane C. Bowers.
+Copyright 2012 Zane C. Bowers-Hadley.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
